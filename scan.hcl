@@ -11,8 +11,9 @@
 # See `security-scanner` docs for more information on how to add `triage` config
 # for specific results or to exclude paths.
 
-# .release/security-scan.hcl controls scanner config for release artifacts, which
-# unlike the scans configured here, will block releases.
+# This file controls scanning the repository only, not release artifacts. See
+# .release/security-scan.hcl for the scanner config for release artifacts, which
+# will block releases.
 
 repository {
   go_modules             = true
