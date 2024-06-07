@@ -21,7 +21,7 @@ repository {
   go_stdlib_version_file = ".go-version"
 
   secrets {
-    all = true
+    all               = true
     skip_path_strings = ["/website/content/"]
   }
 
@@ -30,13 +30,13 @@ repository {
   }
 
   dependabot {
-	required     = true
-	check_config = true
+    required     = true
+    check_config = true
   }
 
   dockerfile {
-	pinned_hashes = true
-	curl_bash     = true
+    pinned_hashes = true
+    curl_bash     = true
   }
 
   # Triage items that are _safe_ to ignore here. Note that this list should be
@@ -47,6 +47,7 @@ repository {
         "ui/tests/*",
         "internal/testing/*",
         "testutil/*",
+        "website/content//*",
       ]
     }
   }
