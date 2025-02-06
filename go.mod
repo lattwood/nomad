@@ -315,3 +315,5 @@ require (
 	gotest.tools/v3 v3.5.1 // indirect
 	kernel.org/pub/linux/libs/security/libcap/psx v1.2.69 // indirect
 )
+
+replace github.com/hashicorp/net-rpc-msgpackrpc/v2 => github.com/lattwood/net-rpc-msgpackrpc/v2 v2.0.0-20250206005141-791fbe7f56b0
